@@ -39,7 +39,7 @@ namespace tf2_obstacle_detector
        if (closest_idx != -1 && min_dist < 2.0){
             
             RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 1000, 
-                "Obstacle Detected! Dist: %.2fm. Calculating Transform...", min_dist);
+                "Obstacle Detected! Dist: %.2fm. Calculating Transform...", min_dist);//debug
 
             geometry_msgs::msg::TransformStamped map2laser_msg; 
 
